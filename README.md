@@ -46,10 +46,7 @@ Audioguide/
 
 1. The user selects a language via a flag button.
 2. The corresponding `Audioguide.html` file is opened.
-3. The user enters a 3-digit code using either:
-
-   * the keyboard
-   * the on-screen number buttons
+3. The user enters a 3-digit code using the on-screen number buttons
 4. If a matching `.mp3` file exists (e.g., `001.mp3`), it will be played.
 5. Input is automatically cleared after 1 second to simplify further use.
 
