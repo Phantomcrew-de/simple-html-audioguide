@@ -63,6 +63,17 @@ To add a new language:
 
 ---
 
+
+#### 📷 Screenshot
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/Screenshot_HTML_Audioguide_Interface.jpg" width="250px"><br>
+      <strong>Audioguide Interface (Android/Chrome)</strong>
+    </td>
+  </tr>
+</table>
+
 #### 💡 Customization Ideas
 
 * Include images or descriptions for each code
@@ -71,6 +82,16 @@ To add a new language:
 
 ---
 
-#### 📦 License
 
-This is a simple open educational tool. You are free to use, modify, and distribute it for non-commercial purposes. Attribution required and appreciated.
+## 📄 License
+
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).  
+You are free to use, modify, and distribute it — as long as you share your changes under the same license.
+
+### 🚶 Credits
+
+Originally developed for **Phantomcrew**'s corporate identity needs, now open for your adaptation.
+
+### 🤝 Author
+
+Made with ❤️ by Julius – [phantomcrew.de](https://phantomcrew.de/)
