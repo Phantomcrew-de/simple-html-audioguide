@@ -33,8 +33,11 @@ Audioguide/
 │
 ├── en/                       # English version (structure same as 'de')
 │   └── Audioguide.html
+│   ├── 001.mp3
+│   ├── 002.mp3
+│   └── 003.mp3
 │
-├── fr/, it/, es/             # Other languages (optional)
+├── fr/, it/, es/             # Other languages
 ```
 
 ---
