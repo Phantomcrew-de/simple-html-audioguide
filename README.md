@@ -65,7 +65,6 @@ To add a new language:
 
 #### 💡 Customization Ideas
 
-* Add a fallback message for unavailable audio files
 * Include images or descriptions for each code
 * Play preview sounds on hover for accessibility
 * Add styling via `style.css` for responsive design
