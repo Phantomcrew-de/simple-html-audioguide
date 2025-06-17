@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Guide</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+      <img src="../logomuseo.jpeg" alt="Logo Museo" style="height: 70px;">
+    <h1>Audio Guide</h1>
+ <!-- Language selection with emoji flags -->
+  <div style="font-size: 40px;">
+    <a href="../en/Audioguide.html">🇺🇸</a>
+    <a href="../de/Audioguide.html">🇩🇪</a>
+    <a href="../fr/Audioguide.html">🇫🇷</a>
+    <a href="../it/Audioguide.html">🇮🇹</a>
+    <a href="../es/Audioguide.html">🇪🇸</a>
+  </div>
+
+        <audio id="audioClip" controls>
+      <source src="" type="audio/mpeg">
+    </audio>
+        <p>Type a 3-digit number:</p>
+    <form>
+<input type="text" id="audioInput" maxlength="3" onkeyup="playAudio()">
+<button type="button" onclick="clearInputField('audioInput')">Clear</button>
+
+
+      <br>
+      <button type="button" onclick="setAudioInput('1')">1</button>
+      <button type="button" onclick="setAudioInput('2')">2</button>
+      <button type="button" onclick="setAudioInput('3')">3</button><br>
+      <button type="button" onclick="setAudioInput('4')">4</button>
+      <button type="button" onclick="setAudioInput('5')">5</button>
+      <button type="button" onclick="setAudioInput('6')">6</button><br>
+      <button type="button" onclick="setAudioInput('7')">7</button>
+      <button type="button" onclick="setAudioInput('8')">8</button>
+      <button type="button" onclick="setAudioInput('9')">9</button><br>
+      <button type="button" onclick="setAudioInput('0')">0</button>
+    </form>
+
+    <script>
+    
+      function playAudio() {
+        var audioInput = document.getElementById("audioInput").value;
+        if (audioInput.length == 3) {
+          var audioClip = document.getElementById("audioClip");
+          audioClip.src = audioInput + ".mp3";
+          audioClip.load();
+          audioClip.play();
+  setTimeout(function() {
+    clearInputField('audioInput');
+  }, 1000); // delay execution by 1 second (1000 milliseconds)
+        }
+      }
+      function setAudioInput(value) {
+        var audioInput = document.getElementById("audioInput");
+        if (audioInput.value.length < 3) {
+          audioInput.value += value;
+        }
+        playAudio();
+      }
+      function clearInputField(fieldId) {
+  document.getElementById(fieldId).value = "";
+}
+
+    </script>
+  </body>
+</html>
