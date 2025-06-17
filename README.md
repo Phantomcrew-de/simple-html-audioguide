@@ -19,7 +19,7 @@ This is a lightweight, multilingual HTML-based audioguide system for museums, ex
 #### 📁 Folder Structure
 
 ```
-project-root/
+Audioguide/
 │
 ├── index.html                # Redirects to default language (e.g., German)
 ├── style.css                 # Optional styling
